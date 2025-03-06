@@ -1,0 +1,95 @@
+.TaskName, .TaskDueDate {
+    display: inline;
+    font-size: 16px; /* Default font size */
+    padding: 0;  /* Ensuring no extra padding/margin is affecting alignment */
+    margin: 0;
+}
+.TaskName{
+    position: relative;
+}
+
+.TaskDiv {
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.TaskDiv:hover {
+    background-color: #2a2a2a;
+}
+
+.TaskLabel {
+    cursor: pointer;
+    display: inline-block;
+}
+
+.TaskCheckbox .form-check-input:checked {
+    background-color: #8e00fd !important;
+    border-color: #8e00fd !important;
+    color: white;
+    cursor: pointer;
+}
+
+.TaskCheckbox .form-check-input {
+    border-radius: 100% !important;
+    border-width: 2px;
+    size: 30px; /* size should be changed to width and height if needed */
+    transform: scale(1.3);
+    background-color: #2A2A2A;
+    cursor: pointer;
+}
+
+.TaskCheckbox {
+    position: relative;
+}
+
+.TaskDueDate {
+    float: right;
+    position: relative;
+    top: 6px;
+    padding-right: 10px;
+}
+
+.dropdownImage {
+    position: relative;
+    padding-right: 5px;
+}
+
+/* Responsive scaling starts here */
+@media (max-width: 1500px) {
+    .TaskName, .TaskDueDate {
+        font-size: 17px;
+    }
+    .TaskDiv {
+        padding: 8px;
+        margin: 8px;
+    }
+    .dropdownImage, .TaskCheckbox .form-check-input {
+        transform: scale(1.1);
+    }
+}
+
+@media (max-width:1300px) {
+    .TaskName, .TaskDueDate {
+        font-size: 12px;
+    }
+    .TaskDiv {
+        padding: 6px;
+        margin: 6px;
+    }
+    .dropdownImage, .TaskCheckbox .form-check-input {
+        transform: scale(.9);
+    }
+}
+@media (max-width:1150px) {
+    .TaskName, .TaskDueDate {
+        font-size: 10px;
+    }
+    .TaskDiv {
+        padding: 6px;
+        margin: 6px;
+    }
+    .dropdownImage, .TaskCheckbox .form-check-input {
+        transform: scale(.8);
+    }
+}

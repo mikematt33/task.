@@ -1,0 +1,93 @@
+.sign-up-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1;
+    position: relative;
+}
+
+.sign-up {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: bold;
+    font-size: 35px;
+    white-space: nowrap;
+}
+
+.custom-form {
+    height: 60px !important;
+    width: 500px !important;
+    border-color: #5f5f5f !important;
+    border-width: 2px;
+    margin-bottom: 40px;
+    border-radius: 10px;
+    background-color: #232323 !important;
+}
+
+.custom-form[type="email"] {
+    margin-top: 30px; 
+}
+
+
+.custom-form::placeholder {
+    color: #5f5f5f !important;
+    font-size: 20px;
+}
+
+.custom-form:not(:placeholder-shown) {
+    color: white !important;
+    font-weight: bold;
+}
+
+.custom-form:focus {
+    border-color: #8e00fd !important; 
+    background-color: #343434;
+}
+
+.signUp-btn {
+    height: 60px;
+    width: 500px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 10px;
+    background-color: #8e00fd !important;
+    border: none;
+    color: white; 
+}
+
+.sign-up-text {
+    margin-top: 30px;
+    color: white;
+    white-space: nowrap;
+}
+
+.sign-up-link {
+    color: #8e00fd; 
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.emailError {
+    color: #FF4040 !important;
+    font-size: 20px;
+    white-space: nowrap;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.passError {
+    color: #FF4040;
+    font-size: 20px;
+    white-space: nowrap;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.empty {
+    color: #FF4040 !important;
+    font-size: 20px;
+    white-space: nowrap;
+    font-weight: bold;
+    margin-bottom: 30px;
+}

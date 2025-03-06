@@ -1,0 +1,113 @@
+.task-logo {
+    padding: 10px;
+}
+.sidebar-outline {
+    border-right: rgba(57, 57, 57, .75) solid 3px;
+    height: 100vh;
+}
+.button-select-task {
+    background-color: #8E00FD !important;
+    text-align: left;
+    color: white;
+    border: none !important;
+    width: 95%;
+    max-height: 40px !important;
+    text-align: left !important;
+    cursor: pointer;
+    font-size: 17px !important;
+}
+.button-select-task:hover {
+    background-color: rgba(142, 0, 253, .75) !important;
+}
+.button-select-calendar {
+    background-color: #8E00FD !important;
+    text-align: left;
+    color: white;
+    border: none !important;
+    width: 95%;
+    max-height: 40px !important;
+    text-align: left !important;
+    cursor: pointer;
+    font-size: 17px !important;
+}
+.button-select-calendar:hover {
+    background-color: rgba(142, 0, 253, .65) !important;
+}
+.button-select-default {
+    background-color: transparent !important;
+    text-align: left;
+    color: white;
+    border: none !important;
+    width: 95%;
+    max-height: 40px !important;
+    text-align: left !important;
+    cursor: pointer;
+    font-size: 17px !important;
+}
+.button-select-default:hover {
+    opacity: .65;
+}
+.sidebar-bottom {
+    position: absolute;
+    bottom: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.logout {
+    background-color: transparent !important;
+    text-align: left;
+    color: white;
+    border: none !important;
+    font-size: 20px !important;
+}
+.logout:hover {
+    opacity: .65;
+}
+.logout-text {
+    margin-left: 15px;
+    font-size: 18px;
+}
+#logout-icon {
+    opacity: .55;
+    width: 30px;
+    display: inline-block;
+    margin-left: -14px !important;
+}
+#settings-icon {
+    opacity: .55;
+    width: 30px;
+    display: inline-block;
+}
+.sidebar-middle {
+    margin-top: 50px;
+    margin-left: 10px;
+    margin-right: 10px;
+    height: 65%;
+}
+.sidebar-glace {
+    margin-bottom: 15px;
+    max-height: 220px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+::-webkit-scrollbar-thumb {
+    background: #8E00FD;
+    border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:window-inactive,
+::-webkit-scrollbar-thumb {
+    background: #8E00FD;
+    border-radius: 4px;
+}
+.sidebar-overdue {
+    margin-bottom: 15px;
+    max-height: 220px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}

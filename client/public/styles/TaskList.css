@@ -1,0 +1,43 @@
+#TaskSearch {
+    margin: 10px;
+    margin-top: 20px;
+    font-size: 18px;
+    width: 95%;
+    background-color: #2A2A2A;
+    border: 0;
+    color: white;
+}
+
+#CreateTaskName {
+    font-size: 24px;
+    background-color: #2A2A2A;
+    border: 0;
+    color: white;
+    display: inline;
+}
+
+#CreateTaskGroup {
+    margin: 10px;
+    margin-bottom: 20px;
+    width: 98%;
+}
+
+.CreateTaskButton {
+    background-color: #2A2A2A !important;
+    border: 0 !important;
+}
+
+.CreateTaskButtonComplete {
+    color: #8E00FD !important;
+    background-color: #2A2A2A !important;
+    border: 0 !important;
+}
+
+#TaskSearch::placeholder {
+    color: #5F5F5F;
+}
+
+#CreateTaskName::placeholder {
+    color: #5F5F5F;
+
+}

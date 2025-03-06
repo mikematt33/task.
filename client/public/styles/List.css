@@ -1,0 +1,13 @@
+.ListContainer {
+    background-color: #232323;
+    color: white;
+    height: 100%;
+    margin-bottom: auto;
+}
+
+.TaskList {
+    border-left: 2px solid #393939;
+    border-right: 2px solid #393939;
+    height: 100vh;
+    overflow-x: scroll;
+}

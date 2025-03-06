@@ -1,0 +1,628 @@
+.modalCalendar {
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+}
+
+.modalCalendar-content-create {
+  background-color: #1c1c1c;
+  color: white;
+  margin: auto;
+  padding: 100px;
+  border: 1px solid #5f5f5f;
+  width: 355px; 
+  max-width: 600px;
+  height: auto;
+  max-height: 65vh;
+  box-sizing: border-box; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  position: relative;
+  transform: translateX(-35px) translateY(-40px);
+}
+
+.modalCalendar-content-update {
+  background-color: #1c1c1c;
+  color: white;
+  margin: auto;
+  padding: 100px;
+  border: 1px solid #5f5f5f;
+  width: 355px; 
+  max-width: 600px;
+  height: auto;
+  max-height: 65vh;
+  box-sizing: border-box; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  position: relative;
+  transform: translateX(+450px) translateY(-100px);
+}
+
+.modalCalendar-close {
+  color: #aaa;
+  float: right;
+  font-size: 22px;
+  font-weight: bold;
+  top: -8px; 
+  left: 160px;
+  position: relative;
+
+}
+
+.modalCalendar-close:hover,
+.modalCalendar-close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modalToggle-container .toggle-button {
+  background-color: #2a2a2a;
+  color: white;
+  border: none;
+  width: 100px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  flex-grow: 1;
+  border-radius: 0;
+  position: relative;
+  margin-left: 141px;
+}
+
+.modalToggle-container .toggle-button.active {
+  background-color: #5f5f5f !important;
+  position: relative;
+}
+
+.modalToggle-container .toggle-button:active,
+.modalToggle-container .toggle-button:hover {
+  background-color: #5f5f5f !important;
+  position: relative;
+}
+
+.modalToggle-container .toggle-button:focus {
+  background-color: #5f5f5f;
+  position: relative;
+}
+
+.modalToggle-container .toggle-button:first-child {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  position: relative;
+}
+
+.modalToggle-container .toggle-button:last-child {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  position: relative;
+}
+
+.modalToggle-container .toggle-button + .toggle-button {
+  margin-left: -1px;
+  position: relative;
+}
+
+.input-date {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.input-date input.form-control {
+  background-color: #333;
+  color: white;
+  border: none;
+  margin-right: 10px;
+  flex-grow: 1;
+}
+
+.input-date .append {
+  background-color: transparent;
+}
+
+
+.background__calendar {
+  background-color: #1c1c1c !important;
+  color: white;
+  border-radius: 10px;
+  border: none !important;
+}
+
+
+.background__calendar .react-datepicker__day,
+.background__calendar .react-datepicker__week,
+.background__calendar .react-datepicker__month {
+  font-size: 17px;
+}
+
+.background__calendar .react-datepicker__day {
+  padding: 5px;
+  margin: 2px;
+}
+
+.background__calendar .react-datepicker__header .react-datepicker__current-month {
+  color: white;
+}
+
+.background__calendar .react-datepicker__day,
+.background__calendar .react-datepicker__day-name {
+  color: white;
+}
+
+.background__calendar .react-datepicker__day--selected {
+  background-color: #8e00fd;
+  border-radius: 50%;
+  color: white;
+}
+
+.background__calendar .react-datepicker__day--today {
+  background-color: transparent;
+  /* border-color: #8e00fd; */
+  border: 1px solid #8e00fd;
+  border-radius: 50%;
+  color: white;
+}
+
+.background__calendar .react-datepicker__day:hover {
+  background-color: #8e00fd;
+  border-radius: 150%;
+}
+
+.background__calendar .react-datepicker__header {
+  background-color: #1c1c1c;
+  color: white;
+}
+
+.react-datepicker {
+  position: absolute;
+  margin-left: 126px;
+  position: relative;
+}
+
+.react-datepicker__day--selected {
+  background-color: #8e00fd;
+  border-radius: 50%;
+  color: white;
+}
+
+.modalTime {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 6px;
+  position: relative;
+}
+
+.modalTime-side   {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: transparent;
+  margin-left: 80px;
+  font-size: 15px;
+  position: relative;
+}
+
+.modalTime-hour {
+  justify-content: flex-end;
+}
+
+
+.modalTime .form-control [type="number-hours"] {
+  margin-left: 50px;
+  position: relative;
+}
+
+.formInput-hour {
+  background-color: #2a2a2a !important;
+  color: white !important;
+  border: none !important;
+  padding: 5px 10px;
+  margin-right: 5px;
+  border-radius: 5px;
+  box-sizing: border-box;
+  width: 50px !important;
+  margin-left: 50px;
+}
+
+.modalTimeInput-hour {
+  position: relative;
+  left: -20px;
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+  align-items: center;
+  background-color: transparent;
+  font-size: 15px;
+  margin-right: 0;
+}
+
+.modalTimeInput-min {
+  position: relative;
+  left: -65px;
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+  align-items: center;
+  background-color: transparent;
+  font-size: 15px;
+  margin-right: 0px;
+}
+
+.formInput-min {
+  background-color: #2a2a2a !important;
+  color: white !important;
+  border: none !important;
+  padding: 5px 10px;
+  margin-right: 5px;
+  border-radius: 5px;
+  box-sizing: border-box;
+  width: 50px !important;
+  margin-left: 50px;
+}
+
+.formInput-hour:focus, 
+.formInput-min:focus {
+  background-color: #2a2a2a !important;
+  box-shadow: none !important;
+  color: white  !important;
+}
+
+.modalTime-label {
+  margin-right: 11px;
+  justify-content: flex-end;
+}
+
+.modalTime button {
+  background-color: #555;
+  color: white !important;
+  border: none;
+  padding: 5px 10px;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+.timeEnd {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+  margin-right: 6px;
+  position: relative;
+}
+
+.tEnd-front {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: transparent;
+  margin-left: 80px;
+  font-size: 15px;
+  position: relative;
+}
+
+.timeEnd-hour {
+  justify-content: flex-end;
+  position: relative;
+}
+
+.timeEnd-min {
+  margin-right: 10px;
+  justify-content: flex-end;
+  position: relative;
+}
+
+.formEndInput-hour {
+  background-color: #2a2a2a !important;
+  color: white !important;
+  border: none !important;
+  padding: 5px 10px;
+  margin-right: 5px;
+  border-radius: 5px;
+  box-sizing: border-box;
+  width: 50px !important;
+  margin-left: 50px;
+}
+
+.formEndInput-min {
+  background-color: #2a2a2a !important;
+  color: white  !important;
+  border: none !important;
+  padding: 5px 10px;
+  margin-right: 5px;
+  border-radius: 5px;
+  box-sizing: border-box;
+  width: 50px !important;
+  margin-left: 50px;
+}
+
+.formEndInput-hour:focus, 
+.formEndInput-min:focus {
+  background-color: #2a2a2a !important;
+  box-shadow: none !important;
+  color: white !important;
+}
+
+.timeEndInput-hour {
+  position: relative;
+  left: -16px;
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+  align-items: center;
+  background-color: transparent;
+  font-size: 15px;
+  margin-right: 0;
+
+}
+
+.timeEndInput-min {
+  position: relative;
+  left: -63px;
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+  align-items: center;
+  background-color: transparent;
+  font-size: 15px;
+  margin-right: 0px;
+}
+
+.timeEnd button {
+  background-color: #555;
+  color: white !important;
+  border: none;
+  padding: 5px 10px;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+.modalRepeatsContainer {
+  display: flex;
+  justify-content: start; 
+  align-items: center;
+  width: 100%; 
+  padding: 0; 
+  box-sizing: border-box; 
+}
+
+.modalRepeatTask-label {
+  flex-shrink: 0;
+  white-space: nowrap; 
+  margin-right: 1px; 
+  margin-left: 20px;
+}
+
+.modalRepeatTask-Toggle {
+  width: 150px; 
+  text-overflow: ellipsis; 
+  white-space: nowrap; 
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: transparent !important;
+  font-size: 15px;
+  margin-top: 5px;
+  margin-left: 25px;
+}
+
+.modalRepeatEvent-label {
+  flex-shrink: 0; 
+  white-space: nowrap; 
+  margin-right: 1px; 
+  margin-left: 20px;
+}
+
+.modalRepeatEvent-Toggle {
+  width: 150px; 
+  text-overflow: ellipsis; 
+  white-space: nowrap; 
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: transparent !important;
+  font-size: 15px;
+  margin-top: 30px;
+  margin-left: 60px;
+}
+
+.modalRepeatTimeTask-Toggle {
+  width: 150px; 
+  text-overflow: ellipsis; 
+  white-space: nowrap; 
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: transparent !important;
+  font-size: 15px;
+  margin-top: 5px;
+  margin-right: 25px;
+  margin-left: 33px;
+}
+
+.modalRepeatTime-Toggle {
+  width: 150px; 
+  text-overflow: ellipsis;
+  white-space: nowrap; 
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: transparent !important;
+  font-size: 15px;
+  margin-top: 30px;
+  margin-right: 25px;
+  margin-left: 33px;
+}
+
+.modalRepeatTime-label {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: transparent !important;
+  margin-left: 10px;
+  font-size: 15px;
+  white-space: nowrap;
+  flex-shrink: 0;
+  margin-right: 5px;
+}
+
+.modalRepeatTask-period {
+  justify-content: space-between;
+  background-color: #2a2a2a !important;  
+  border: none !important;
+  color: white; 
+  margin-left: 5px;
+}
+
+.modalRepeatTime-period {
+  justify-content: space-between;
+  background-color: #2a2a2a  !important;  
+  border: none !important;
+  color: white; 
+  text-overflow: ellipsis;
+}
+
+.modalRepeatEvent-Toggle .dropdown-toggle:active,
+.modalRepeatEvent-Toggle .dropdown-toggle:focus,
+.modalRepeatEvent-Toggle .dropdown-toggle:hover,
+.modalRepeatTask-Toggle .dropdown-toggle:active,
+.modalRepeatTask-Toggle .dropdown-toggle:focus,
+.modalRepeatTask-Toggle .dropdown-toggle:hover, 
+.modalRepeatTime-Toggle .dropdown-toggle:active,
+.modalRepeatTime-Toggle .dropdown-toggle:focus,
+.modalRepeatTime-Toggle .dropdown-toggle:hover {
+  background-color: #8e00fd !important; 
+}
+
+.modalRepeatEvent-Toggle .dropdown-menu.show,
+.modalRepeatTask-Toggle .dropdown-menu.show,
+.modalRepeatTime-Toggle .dropdown-menu.show{
+  background-color: #2a2a2a;  
+  color: white;
+}
+
+.modalRepeatEvent-Toggle .dropdown-menu.show .dropdown-item,
+.modalRepeatTask-Toggle .dropdown-menu.show .dropdown-item,
+.modalRepeatTime-Toggle .dropdown-menu.show .dropdown-item {
+  color: white;
+}
+
+.modalRepeatEvent-Toggle .dropdown-menu.show .dropdown-item:active,
+.modalRepeatEvent-Toggle .dropdown-menu.show .dropdown-item:focus,
+.modalRepeatEvent-Toggle .dropdown-menu.show .dropdown-item:hover,
+.modalRepeatTask-Toggle .dropdown-menu.show .dropdown-item:hover,
+.modalRepeatTask-Toggle .dropdown-menu.show .dropdown-item:active,
+.modalRepeatTask-Toggle .dropdown-menu.show .dropdown-item:focus,
+.modalRepeatTime-Toggle .dropdown-menu.show .dropdown-item:hover,
+.modalRepeatTime-Toggle .dropdown-menu.show .dropdown-item:active,
+.modalRepeatTime-Toggle .dropdown-menu.show .dropdown-item:focus {
+  background-color: #8e00fd !important; 
+  color: white !important; 
+}
+
+.datepicker-items {
+  position: relative;
+  padding-bottom: 15px;
+}
+
+.ampm-toggle {
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+}
+
+.ampm-toggle .toggle-button {
+  background-color: #2a2a2a;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  flex-grow: 1;
+  position: relative;
+  left: -75px;
+  border-radius: 0;
+}
+
+.ampm-toggle .toggle-button.active {
+  background-color: #5f5f5f !important;
+  position: relative;
+}
+
+.ampm-toggle .toggle-button:active,
+.ampm-toggle .toggle-button:hover {
+  background-color: #5f5f5f !important;
+  position: relative;
+}
+
+.ampm-toggle .toggle-button:first-child {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  position: relative;
+}
+
+.ampm-toggle .toggle-button:last-child {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  position: relative;
+  
+}
+
+.ampm-toggle .toggle-button + .toggle-button {
+  margin-left: -1px;
+  position: relative;
+}
+
+.button-choice {
+  margin-top: 15px;
+  margin-bottom: 20px;
+  transition: opacity 0.3s ease;
+  position: relative;
+  margin-left: 82px;
+}
+
+.button-choice .done-button:hover{
+  background-color: #8e00fd;
+  color: white;
+  opacity: 0.6;
+}
+
+.button-choice .clear-button:hover {
+  background-color: #6c757d; 
+  opacity: 0.6; 
+}
+
+.clear-button {
+  background-color: #6c757d !important; 
+  color: white;
+  margin-right: 10px;
+  width: 150px;
+  height: 35px;
+  border-radius: 5px;
+  border: none !important
+}
+
+.done-button {
+  background-color: #8e00fd !important;
+  color: white;
+  width: 150px;
+  border-radius: 5px;
+  height: 35px;
+  border: none !important;
+}

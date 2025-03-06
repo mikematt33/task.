@@ -1,0 +1,190 @@
+/* Month View */
+.rbc-month-view {
+    border: .5px solid #393939 !important;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.rbc-month-header {
+    background-color: #393939 !important;
+    color: #FFFFFF !important;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.rbc-header {
+    border: .5px solid #393939 !important;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.rbc-month-row {
+    border: .5px solid #393939 !important;
+}
+
+.rbc-day-bg {
+    background-color: #232323 !important;
+    border: .5px solid #393939 !important;
+}
+
+.rbc-date-cell {
+    color: #FFFFFF;
+}
+
+.rbc-off-range {
+    color: #505050 !important;
+}
+
+.rbc-date-cell {
+    text-align: left !important;
+    padding-left: 5px;
+}
+
+.rbc-month-row .rbc-row-bg .rbc-day-bg.rbc-today {
+    border: 1.5px solid #8E00FD !important;
+    background-color: #232323 !important;
+}
+
+/* Tooltip */
+.custom-tooltip {
+    background-color: #0c0c0c;
+    color: #FFFFFF;
+    padding: 7px;
+    font-size: 14px;
+    max-width: 400px;
+    max-height: 600px;
+    /* overflow: hidden; */
+    
+}
+
+.custom-tooltip .custom-arrow {
+    width: 15px;
+    height: 10px;
+}
+
+.rbc-month-divider {
+    height: 1px;
+    background-color: grey;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 15px;
+    user-select: none;
+}
+.custom-tooltip-dropdown-edit-button {
+    font-size: 12px !important;
+    background-color: #8E00FD !important;
+    border: none !important;
+}
+.custom-tooltip-dropdown-delete-button {
+    font-size: 12px !important;
+    background-color: transparent !important;
+    color: #8E00FD !important;
+    border: none !important;
+}
+
+/* Week/Day View */
+
+.rbc-current-time-indicator {
+    background-color: #8E00FD !important;
+}
+.rbc-time-view {
+    border: .05px solid #393939 !important;
+}
+.rbc-time-content {
+    border: none !important;
+}
+.rbc-time-content > * + * > * {
+    border-left: none !important;
+}
+.rbc-time-header-content {
+    border: none !important;
+}
+.rbc-timeslot-group {
+    border: .05px solid #393939 !important;
+}
+.rbc-day-slot .rbc-time-slot {
+    border: none !important;
+}
+.rbc-time-header.rbc-overflowing {
+    border: none !important;
+    margin-right: 1px !important;
+}
+.rbc-header.rbc-today {
+    background-color: #232323 !important;
+}
+.rbc-day-slot.rbc-time-column.rbc-today {
+    background-color: #232323 !important;
+}
+
+/* Week View */
+
+.rbc-time-header-cell {
+    background-color: #393939 !important;
+    color: #FFFFFF !important;
+    border-radius: 10px 10px 0px 0px;
+}
+.rbc-row.rbc-time-header-cell .rbc-header.rbc-today {
+    background-color: #393939 !important;
+    color: #FFFFFF !important;
+    border-radius: 0px !important;
+    border-bottom: 2px solid #8E00FD !important;
+}
+.rbc-allday-cell .rbc-row-bg {
+    padding-right: 9px; /* Adjust as needed */
+}
+
+/* Event */
+.rbc-event {
+    padding: 2px 3px !important;
+    margin-bottom: 2px !important;
+    background-color: #393939 !important;
+    max-width: 95% !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+.rbc-show-more {
+    background-color: transparent !important;
+    color: #FFFFFF !important;
+}
+.rbc-overlay {
+    background-color: #1c1c1c !important;
+    border: 1px solid #393939 !important;
+}
+.rbc-overlay-header {
+    border-bottom: 1px solid #393939 !important;
+}
+.rbc-day-slot .rbc-event{
+    border: none !important;
+    border-radius: 5px !important;
+}
+.rbc-event {
+    padding: 0 !important;
+}
+.rbc-event-label {
+    display: none !important;
+}
+.rbc-day-slot .rbc-event {
+    background-color: transparent !important;
+}
+.rbc-row-segment .rbc-event-content {
+    border-radius: 5px !important;
+}
+
+/* Scrollbar */
+.rbc-time-content::-webkit-scrollbar {
+    width: 10px; 
+}
+
+.rbc-time-content::-webkit-scrollbar-track {
+    background: #232323;
+}
+
+.rbc-time-content::-webkit-scrollbar-thumb {
+    background: #8E00FD;
+    border-radius: 10px;
+}
+
+.rbc-time-content::-webkit-scrollbar-thumb:hover {
+    background: #7000c6;
+}
+
+::-webkit-scrollbar-corner {
+	background: #232323;
+}
